@@ -1,0 +1,10 @@
+/* Quitar márgenes entre carrusel y navbar superior */
+.carousel-container {
+  position: relative;
+}
+
+hr {
+  color: white;
+  position: absolute;
+  padding: 4px;
+}

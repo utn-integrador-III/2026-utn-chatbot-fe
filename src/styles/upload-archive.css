@@ -1,0 +1,507 @@
+/* ========================================
+   GLOBAL STYLES & ANIMATIONS
+======================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #e9ecef 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Animated background particles */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(0, 86, 179, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(118, 75, 162, 0.08) 0%, transparent 50%);
+  z-index: -1;
+  animation: particleFloat 20s ease-in-out infinite;
+}
+
+@keyframes particleFloat {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(-10px, -15px) rotate(1deg); }
+  50% { transform: translate(15px, -10px) rotate(-1deg); }
+  75% { transform: translate(-5px, 10px) rotate(0.5deg); }
+}
+
+/* ========================================
+   CONTAINER & LAYOUT ENHANCEMENTS
+======================================== */
+[style*="background: #0d1b2a"] {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #e9ecef 100%) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+[style*="background: #0d1b2a"]::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(45deg, transparent 49%, rgba(255, 255, 255, 0.02) 50%, transparent 51%),
+    linear-gradient(-45deg, transparent 49%, rgba(255, 255, 255, 0.02) 50%, transparent 51%);
+  background-size: 60px 60px;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+/* ========================================
+   HEADER ENHANCEMENTS
+======================================== */
+header[style*="display: flex"] {
+  background: rgba(0, 31, 84, 0.9) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 16px !important;
+  padding: 1.5rem 2rem !important;
+  box-shadow: 
+    0 8px 32px rgba(0, 31, 84, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+  margin-bottom: 2rem !important;
+  position: relative;
+  overflow: hidden;
+}
+
+header[style*="display: flex"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+header h1 {
+  color: #fff !important;
+  font-size: 1.8rem !important;
+  font-weight: bold !important;
+  margin: 0 !important;
+  text-shadow: 0 2px 10px rgba(0, 86, 179, 0.5) !important;
+  position: relative;
+}
+
+header h1::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #0056b3, #00d4ff);
+  border-radius: 2px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 5px #0056b3; }
+  to { box-shadow: 0 0 15px #00d4ff, 0 0 25px #00d4ff; }
+}
+
+/* ========================================
+   LINK BUTTON ENHANCEMENTS
+======================================== */
+a[style*="background: #003566"] {
+  background: linear-gradient(45deg, #003566 0%, #0056b3 100%) !important;
+  border: 2px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 12px !important;
+  padding: 12px 20px !important;
+  text-decoration: none !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  text-transform: uppercase !important;
+  font-size: 0.85rem !important;
+  letter-spacing: 0.5px !important;
+}
+
+a[style*="background: #003566"]:hover {
+  transform: translateY(-2px) scale(1.05) !important;
+  box-shadow: 0 10px 30px rgba(0, 86, 179, 0.4) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+a[style*="background: #003566"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+a[style*="background: #003566"]:hover::before {
+  left: 100%;
+}
+
+/* ========================================
+   MAIN CONTENT ENHANCEMENTS
+======================================== */
+main[style*="marginTop: 40px"] {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 24px !important;
+  padding: 3rem !important;
+  box-shadow: 
+    0 20px 60px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+main[style*="marginTop: 40px"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #0056b3, transparent);
+  animation: topGlow 3s ease-in-out infinite;
+}
+
+@keyframes topGlow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+main h2 {
+  color: #fff !important;
+  font-size: 2rem !important;
+  font-weight: bold !important;
+  margin: 0 0 2rem 0 !important;
+  text-align: center !important;
+  text-shadow: 0 2px 15px rgba(0, 86, 179, 0.6) !important;
+  position: relative !important;
+}
+
+main h2::after {
+  content: '📄';
+  position: absolute;
+  top: -10px;
+  right: -40px;
+  font-size: 1.5rem;
+  opacity: 0.7;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+/* ========================================
+   FORM ENHANCEMENTS
+======================================== */
+form[style*="display: flex"] {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 16px !important;
+  padding: 2rem !important;
+  gap: 1.5rem !important;
+  position: relative !important;
+}
+
+form[style*="display: flex"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, 
+    rgba(0, 86, 179, 0.1) 0%, 
+    transparent 25%, 
+    transparent 75%, 
+    rgba(102, 126, 234, 0.1) 100%);
+  border-radius: 16px;
+  z-index: -1;
+}
+
+/* ========================================
+   FILE INPUT ENHANCEMENTS
+======================================== */
+input[type="file"] {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 2px dashed rgba(0, 86, 179, 0.5) !important;
+  border-radius: 12px !important;
+  padding: 1.5rem !important;
+  color: #fff !important;
+  font-size: 1rem !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+input[type="file"]:hover {
+  border-color: #0056b3 !important;
+  background: rgba(0, 86, 179, 0.1) !important;
+  transform: scale(1.02) !important;
+  box-shadow: 0 5px 20px rgba(0, 86, 179, 0.3) !important;
+}
+
+input[type="file"]:focus {
+  outline: none !important;
+  border-color: #00d4ff !important;
+  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.3) !important;
+}
+
+input[type="file"]::file-selector-button {
+  background: linear-gradient(45deg, #0056b3, #00d4ff) !important;
+  color: white !important;
+  border: none !important;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+  margin-right: 12px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+}
+
+input[type="file"]::file-selector-button:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(0, 86, 179, 0.4) !important;
+}
+
+/* ========================================
+   SUBMIT BUTTON ENHANCEMENTS
+======================================== */
+button[type="submit"] {
+  background: linear-gradient(45deg, #0056b3 0%, #00d4ff 100%) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 1rem 2rem !important;
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+  cursor: pointer !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  box-shadow: 0 4px 15px rgba(0, 86, 179, 0.3) !important;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 8px 25px rgba(0, 86, 179, 0.5) !important;
+}
+
+button[type="submit"]:active {
+  transform: translateY(-1px) scale(1.02) !important;
+}
+
+button[type="submit"]:disabled {
+  background: linear-gradient(45deg, #6c757d, #adb5bd) !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+button[type="submit"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+button[type="submit"]:hover::before {
+  left: 100%;
+}
+
+/* Loading state animation */
+button[type="submit"]:disabled::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@keyframes spin {
+  0% { transform: translateY(-50%) rotate(0deg); }
+  100% { transform: translateY(-50%) rotate(360deg); }
+}
+
+/* ========================================
+   MESSAGE ENHANCEMENTS
+======================================== */
+p[style*="marginTop: 12px"] {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-left: 4px solid #0056b3 !important;
+  border-radius: 8px !important;
+  padding: 1rem 1.5rem !important;
+  margin: 1.5rem 0 !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  animation: messageSlide 0.5s ease-out !important;
+}
+
+@keyframes messageSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Success message styling */
+p[style*="marginTop: 12px"]:has-text("✅"),
+p[style*="marginTop: 12px"][style*="✅"] {
+  border-left-color: #28a745 !important;
+  background: rgba(40, 167, 69, 0.1) !important;
+  color: #90ee90 !important;
+}
+
+/* Error message styling */
+p[style*="marginTop: 12px"]:has-text("❌"),
+p[style*="marginTop: 12px"][style*="❌"] {
+  border-left-color: #dc3545 !important;
+  background: rgba(220, 53, 69, 0.1) !important;
+  color: #ffb3b3 !important;
+}
+
+p[style*="marginTop: 12px"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, currentColor, transparent);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+@media (max-width: 768px) {
+  header[style*="display: flex"] {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    padding: 1rem !important;
+    text-align: center !important;
+  }
+  
+  main[style*="marginTop: 40px"] {
+    padding: 2rem 1.5rem !important;
+    margin-top: 1rem !important;
+  }
+  
+  main h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  input[type="file"] {
+    padding: 1rem !important;
+    font-size: 0.9rem !important;
+  }
+  
+  button[type="submit"] {
+    padding: 0.875rem 1.5rem !important;
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  body::before {
+    display: none;
+  }
+  
+  main[style*="marginTop: 40px"] {
+    padding: 1.5rem 1rem !important;
+    border-radius: 16px !important;
+  }
+  
+  form[style*="display: flex"] {
+    padding: 1.5rem !important;
+  }
+  
+  main h2 {
+    font-size: 1.3rem !important;
+  }
+  
+  main h2::after {
+    display: none;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY & HIGH CONTRAST
+======================================== */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (prefers-contrast: high) {
+  header[style*="display: flex"],
+  main[style*="marginTop: 40px"],
+  form[style*="display: flex"] {
+    border-width: 2px !important;
+    border-color: #fff !important;
+  }
+  
+  input[type="file"] {
+    border-width: 3px !important;
+    border-color: #00d4ff !important;
+  }
+  
+  button[type="submit"] {
+    border: 2px solid #fff !important;
+  }
+}

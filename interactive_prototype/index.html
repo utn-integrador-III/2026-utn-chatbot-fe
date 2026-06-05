@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chatbot-Minimalista</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Botón flotante -->
+  <button id="chat-btn" class="chat-button"><img src="img/chat-bot.png"></button>
+
+  <!-- Ventana del chatbot -->
+  <div id="chat-window" class="chat-window hidden">
+    <div class="chat-header">🎓 Asistente Virtual UTN</div>
+
+    <div class="chat-body" id="chat-body">
+      <div class="bot-message-container">
+        <div class="avatar bot-avatar">🤖</div>
+        <div class="message bot-message">Hola 👋 ¿En qué podemos ayudarte?</div>
+      </div>
+
+      <div class="suggestions">
+        <button class="suggestion">Consultas de becas</button>
+        <button class="suggestion">Consultas de matrículas</button>
+        <button class="suggestion">Horarios de clases</button>
+        <button class="suggestion">Información general</button>
+      </div>
+    </div>
+
+    <div class="chat-footer">
+      <input type="text" placeholder="Escribe tu mensaje..." id="user-input">
+      <button id="send-btn">Enviar</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+/* campus.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+.campus-container {
+  min-height: 100vh;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-box {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px 32px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.logo-section {
+  margin-bottom: 30px;
+}
+
+.utn-logo {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.utn-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.utn-box {
+  background: #1e3a8a;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.utn-dots {
+  color: #60a5fa;
+  font-size: 24px;
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+.utn-subtitle {
+  color: #1e3a8a;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.campus-title {
+  color: #6b7280;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 12px;
+}
+
+.form-section {
+  margin-bottom: 16px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #374151;
+  background: white;
+  transition: border-color 0.2s ease;
+  margin-bottom: 12px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #06b6d4;
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
+}
+
+.form-input::placeholder {
+  color: #9ca3af;
+}
+
+.login-btn {
+  width: 100%;
+  background: #06b6d4;
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-btn:hover {
+  background: #0891b2;
+}
+
+.forgot-password {
+  text-align: center;
+  margin: 16px 0 32px 0;
+}
+
+.forgot-password a {
+  color: #2563eb;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.forgot-password a:hover {
+  color: #1d4ed8;
+}
+
+.guest-section {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 24px;
+  margin-top: 32px;
+  text-align: center;
+}
+
+.guest-title {
+  color: #1e3a8a;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.guest-btn {
+  background: #06b6d4;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.guest-btn:hover {
+  background: #0891b2;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  padding-top: 16px;
+}
+
+.language-selector {
+  position: relative;
+}
+
+.language-select {
+  background: transparent;
+  border: none;
+  color: #2563eb;
+  font-size: 12px;
+  cursor: pointer;
+  padding-right: 16px;
+  outline: none;
+}
+
+.language-select:hover {
+  color: #1d4ed8;
+}
+
+.dropdown-arrow {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2563eb;
+  font-size: 10px;
+  pointer-events: none;
+}
+
+.cookies-btn {
+  background: #06b6d4;
+  color: white;
+  border: none;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cookies-btn:hover {
+  background: #0891b2;
+}
+
+.help-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.help-button:hover {
+  background: #2563eb;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .campus-container {
+    padding: 16px;
+  }
+  
+  .login-box {
+    padding: 32px 24px;
+  }
+  
+  .utn-box {
+    font-size: 28px;
+    padding: 4px 10px;
+  }
+  
+  .utn-dots {
+    font-size: 20px;
+  }
+  
+  .campus-title {
+    font-size: 18px;
+  }
+}

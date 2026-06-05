@@ -1,0 +1,50 @@
+/* Fondo azul igual al de la imagen */
+.custom-navbar {
+    background-color: #0d2c67; /* azul UTN aproximado */
+    padding: 0.5rem 1rem;
+    height: 95px;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+/* Estilo para los enlaces del menú */
+.custom-navbar .nav-link {
+    color: #ffffff;
+    margin-right: 1.2rem;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ddd; /* color al pasar el mouse */
+}
+
+/* Íconos sociales en círculos */
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    margin: 0 4px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #ffffff;
+    color: #0d2c67;
+}
+
+/* Bandera */
+.flag-icon {
+    width: 28px;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+

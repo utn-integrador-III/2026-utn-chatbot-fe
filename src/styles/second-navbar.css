@@ -1,0 +1,22 @@
+/* Hace que el navbar quede sobre las imágenes del carrusel */
+.second-navbar {
+  top: 0;
+  width: 100%;
+  background: #eeeded;
+  z-index: 10;
+  padding: 1rem 2rem;
+  border-radius: 0;
+  margin-bottom: 0;
+  position: sticky;
+}
+
+.second-navbar.scroll {
+  background-color: white; /* Color blanco cuando se hace scroll */
+  color: black; /* Color de texto oscuro cuando está en blanco */
+}
+
+.second-navbar .nav-link {
+  color: black !important;
+  font-weight: 500;
+  margin-right: 1.2rem;
+}

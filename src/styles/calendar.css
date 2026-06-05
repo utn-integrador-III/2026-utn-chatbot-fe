@@ -1,0 +1,77 @@
+/* calendars-section.css */
+
+.calendars-banner {
+  background: #a7c5e8;
+  color: white;
+  padding: 16px 24px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.calendars-content {
+  background: white;
+  padding: 32px 24px;
+  min-height: 400px;
+}
+
+.calendars-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.calendars-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.calendar-item {
+  margin-bottom: 12px;
+}
+
+.calendar-item.spaced {
+  margin-top: 32px;
+}
+
+.calendar-link {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: underline;
+  padding: 0;
+  font-family: inherit;
+  transition: color 0.2s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.calendar-link:hover {
+  color: #1d4ed8;
+}
+
+.calendar-link:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .calendars-banner {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+  
+  .calendars-content {
+    padding: 24px 16px;
+  }
+  
+  .calendar-link {
+    font-size: 14px;
+  }
+}
