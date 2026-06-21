@@ -2,9 +2,176 @@
 .carousel-container {
   position: relative;
 }
-
 hr {
   color: white;
   position: absolute;
   padding: 4px;
+}
+
+/* ===== Caja del caption con fondo azul transparente ===== */
+.custom-caption {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+  background: linear-gradient(
+    to top,
+    rgba(13, 44, 103, 0.85) 0%,
+    rgba(13, 44, 103, 0.55) 35%,
+    rgba(13, 44, 103, 0.15) 65%,
+    rgba(13, 44, 103, 0) 100%
+  );
+  padding: 28px 8% 28px 3%;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* evita que los hijos (como el botón) se estiren todo el ancho */
+  justify-content: flex-end; /* empuja el texto hacia abajo dentro del degradado */
+}
+
+.custom-caption-title {
+  font-size: 30px;
+  font-weight: 300;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  max-width: 550px;
+}
+
+.custom-caption-subtitle {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 22px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  max-width: 550px;
+}
+
+.custom-caption-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 800;
+  font-size: 16px;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.custom-caption-btn:hover {
+  background-color: #f0f0f0;
+  color: #0d2c67;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.custom-caption-btn i {
+  font-size: 18px;
+}
+
+/* El fondo azul queda completamente estático, sin animación, sin fade, sin movimiento */
+.custom-caption {
+  opacity: 1;
+}
+
+/* ===== Animación de subida (fade + slide up) al activarse el slide ===== */
+.custom-caption-title,
+.custom-caption-subtitle,
+.custom-caption-btn {
+  opacity: 0;
+}
+
+.carousel-item.active .custom-caption-title {
+  animation: captionFadeUp 0.6s ease forwards;
+  animation-delay: 0.15s;
+}
+
+.carousel-item.active .custom-caption-subtitle {
+  animation: captionFadeUp 0.6s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.carousel-item.active .custom-caption-btn {
+  animation: captionFadeUp 0.6s ease forwards;
+  animation-delay: 0.55s;
+}
+
+@keyframes captionFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Flechas prev/next tipo círculo, como la oficial ===== */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  opacity: 1; /* quitamos la opacidad tenue por defecto de Bootstrap */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none; /* quitamos el ícono SVG default de Bootstrap */
+  width: 48px;
+  height: 48px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-control-prev-icon::before {
+  content: "\F284"; /* bi-chevron-left */
+  font-family: "bootstrap-icons";
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.carousel-control-next-icon::before {
+  content: "\F285"; /* bi-chevron-right */
+  font-family: "bootstrap-icons";
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.08);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .custom-caption {
+    padding: 18px 6%;
+  }
+  .custom-caption-title {
+    font-size: 22px;
+  }
+  .custom-caption-subtitle {
+    font-size: 14px;
+  }
+  .custom-caption-btn {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 36px;
+    height: 36px;
+  }
 }

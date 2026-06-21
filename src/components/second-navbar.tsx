@@ -48,7 +48,10 @@ function SecondNavbar() {
       <nav className={`navbar navbar-expand-lg navbar-dark second-navbar ${isScrolled ? "scroll" : ""}`}>
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            <img src="images/logo-utn2.png" alt="Logo UTN" />
+            <img
+              src={isScrolled ? "images/Utn-logoAzul.png" : "images/logo-utn2.png"}
+              alt="Logo UTN"
+            />
           </Link>
           <button
             className="navbar-toggler"
