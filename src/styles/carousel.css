@@ -1,4 +1,3 @@
-/* Quitar márgenes entre carrusel y navbar superior */
 .carousel-container {
   position: relative;
 }
@@ -8,7 +7,7 @@ hr {
   padding: 4px;
 }
 
-/* ===== Caja del caption con fondo azul transparente ===== */
+
 .custom-caption {
   left: 0;
   right: 0;
@@ -28,8 +27,8 @@ hr {
   border-radius: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* evita que los hijos (como el botón) se estiren todo el ancho */
-  justify-content: flex-end; /* empuja el texto hacia abajo dentro del degradado */
+  align-items: flex-start; 
+  justify-content: flex-end; 
 }
 
 .custom-caption-title {
@@ -76,12 +75,10 @@ hr {
   font-size: 18px;
 }
 
-/* El fondo azul queda completamente estático, sin animación, sin fade, sin movimiento */
 .custom-caption {
   opacity: 1;
 }
 
-/* ===== Animación de subida (fade + slide up) al activarse el slide ===== */
 .custom-caption-title,
 .custom-caption-subtitle,
 .custom-caption-btn {
@@ -114,16 +111,15 @@ hr {
   }
 }
 
-/* ===== Flechas prev/next tipo círculo, como la oficial ===== */
 .carousel-control-prev,
 .carousel-control-next {
   width: 5%;
-  opacity: 1; /* quitamos la opacidad tenue por defecto de Bootstrap */
+  opacity: 1; 
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-image: none; /* quitamos el ícono SVG default de Bootstrap */
+  background-image: none; 
   width: 48px;
   height: 48px;
   border: 2px solid #ffffff;
@@ -135,14 +131,14 @@ hr {
 }
 
 .carousel-control-prev-icon::before {
-  content: "\F284"; /* bi-chevron-left */
+  content: "\F284"; 
   font-family: "bootstrap-icons";
   color: #ffffff;
   font-size: 20px;
 }
 
 .carousel-control-next-icon::before {
-  content: "\F285"; /* bi-chevron-right */
+  content: "\F285"; 
   font-family: "bootstrap-icons";
   color: #ffffff;
   font-size: 20px;
