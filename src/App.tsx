@@ -18,24 +18,43 @@ const App = () => {
         <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="https://www.utn.ac.cr/sites/default/files/Carreras_0.png" className="d-block w-100" alt="Slide 1" />
-              <div className="carousel-caption d-none d-md-block">
-                <h5>Conozca nuestra oferta académica 2025.</h5>
-                <p>Carreras</p>
+              <img src="/images/carousel-img1.png" className="d-block w-100" alt="Slide 1" />
+              <div className="carousel-caption custom-caption text-start">
+                <h2 className="custom-caption-title">CURSOS LIBRES Y EXTENSIÓN</h2>
+                <p className="custom-caption-subtitle">Ingrese aquí para mayor información</p>
+                <a href="/cursos-libres" className="custom-caption-btn">
+                  Nuestros cursos ...
+                  <i className="bi bi-arrow-right"></i>
+                </a>
               </div>
             </div>
             <div className="carousel-item">
-              <img src="https://www.utn.ac.cr/sites/default/files/Admision_0.png" className="d-block w-100" alt="Slide 2" />
-              <div className="carousel-caption d-none d-md-block">
-                <h5>¡Descubre tu potencial, sé parte de la UTN!</h5>
-                <p>Admisión</p>
+              <img src="/images/carousel-img3.png" className="d-block w-100" alt="Slide 3" />
+              <div className="carousel-caption custom-caption text-start">
+                <h2 className="custom-caption-title">CARRERAS</h2>
+                <p className="custom-caption-subtitle">Conozca nuestra oferta académica 2025.</p>
+                <a href="/cursos-libres" className="custom-caption-btn">
+                  Ofertas ...
+                  <i className="bi bi-arrow-right"></i>
+                </a>
               </div>
             </div>
             <div className="carousel-item">
-              <img src="https://www.utn.ac.cr/sites/default/files/Identidad_0.png" className="d-block w-100" alt="Slide 3" />
-              <div className="carousel-caption d-none d-md-block">
-                <h5>Transformamos el futuro con educación de calidad.</h5>
-                <p>Somos Universidad pública.</p>
+              <img src="/images/carousel-img2.png" className="d-block w-100" alt="Slide 3" />
+              <div className="carousel-caption custom-caption text-start">
+                <h2 className="custom-caption-title">ADMISIÓN</h2>
+                <p className="custom-caption-subtitle">¡Descubre tu potencial, sé parte de la UTN!</p>
+                <a href="/cursos-libres" className="custom-caption-btn">
+                  Conoce más ...
+                  <i className="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+              <div className="carousel-item">
+              <img src="/images/carousel-img4.png" className="d-block w-100" alt="Slide 3" />
+              <div className="carousel-caption custom-caption text-start">
+                <h2 className="custom-caption-title">SOMOS U PÚBLICA</h2>
+                <p className="custom-caption-subtitle">Transformando el futuro con educación de calidad: Costa Rica confía en la UPública</p>
               </div>
             </div>
           </div>

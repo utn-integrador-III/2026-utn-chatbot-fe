@@ -35,7 +35,7 @@ function Footer() {
         <div className="footer-nav-links">
           <a href="#" className="footer-nav-link">Términos y condiciones</a>
           <a href="#" className="footer-nav-link">Contacto</a>
-          <a href="#" className="footer-nav-link">UTN Cuadro de calificación del sitio</a>
+          <a href="#" className="footer-nav-link">Buzón de calificación del sitio UTN</a>
         </div>
         <div className="footer-search-section">
           <div className="footer-search">
@@ -45,10 +45,10 @@ function Footer() {
         </div>
         <div className="footer-license">
           <p className="footer-license-text">
-            <strong>Reconocimiento CC BY :</strong> Esta licencia permite a los reutilizadores: copiar, distribuir, remezclar, adaptar y desarrollar el original, en cualquier medio o formato, siempre que se dé crédito al creador.
+            <strong>Reconocimiento CC BY :</strong> Esta licencia permite a los reutilizadores: copiar, distribuir, remezclar, adaptar y construir a partir del original, en cualquier medio o formato, siempre que se dé atribución al creador.
           </p>
           <p className="footer-license-text">
-            La licencia incluso permite el uso comercial, pero se debe dar crédito al creador.
+            Incluso, la licencia permite el uso comercial, pero se debe dar crédito al creador.
           </p>
           <div className="footer-cc-info">
             <img src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" alt="Creative Commons License" className="footer-cc-image" />
@@ -56,7 +56,7 @@ function Footer() {
           </div>
         </div>
         <div className="footer-copyright">
-          <p>© 2025 UTN. Todos los derechos reservados. Este sitio web se actualiza diariamente.</p>
+          <p>© 2026 UTN. Todos los derechos reservados. Este sitio web se actualiza diariamente.</p>
           <p>Proyecto Integrador Pukeyackos</p>
         </div>
       </footer>
