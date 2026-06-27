@@ -1,11 +1,6 @@
-//IMPORTACIONES DEL ROUTER DOM
-//import { Link } from "react-router-dom";
-
-//IMPORTACIONES DE BOOTSTRAP
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-//IMPORTACIONES DE CSS
 import "./styles/carousel.css";
 import "./styles/noticias.css";
 
@@ -69,33 +64,54 @@ const App = () => {
         </div>
       </div>
 
-      {/* SECCIÓN DE NOTICIAS */}
+     {/* SECCIÓN DE NOTICIAS */}
       <section className="noticias-section">
         <div className="noticias-container">
-          <h2 className="noticias-title">Noticias de UTN</h2>
+          <h2 className="noticias-title">Noticias UTN</h2>
           <div className="noticias-grid">
+
             <div className="noticia-card noticia-noticias">
-              <img src="https://www.utn.ac.cr/sites/default/files/2024-08/Noticias-UTN.png" alt="Noticias de UTN" className="noticia-bg-image" />
-              <div className="noticia-overlay"><h3 className="noticia-card-title">Noticias de UTN</h3></div>
+              <img
+                src="https://www.utn.ac.cr/sites/default/files/2025-09/WhatsApp%20Image%202025-09-09%20at%2010.30.06%20AM.jpeg"
+                alt="Noticias de UTN"
+                className="noticia-bg-image"
+              />
+              <div className="noticia-overlay">
+                <h3 className="noticia-card-title">Acción Universitaria</h3>
+              </div>
             </div>
+
             <div className="noticia-card noticia-accion">
-              <img src="https://www.utn.ac.cr/sites/default/files/2025-06/WhatsApp%20Image%202025-06-02%20at%205.40.21%20PM.jpeg" alt="Acción UTN" className="noticia-bg-image" />
-              <div className="accion-logo">
-                <div className="informativo-badge">Informativo</div>
-                <div className="accion-text">
-                  <span className="accion-word">Acción</span>
-                  <span className="utn-word">UTN</span>
-                </div>
+              <img
+                src="https://www.utn.ac.cr/sites/default/files/2025-06/WhatsApp%20Image%202025-06-02%20at%205.40.21%20PM.jpeg"
+                alt="Acción UTN"
+                className="noticia-bg-image"
+              />
+               <div className="noticia-overlay">
               </div>
             </div>
             <div className="noticia-card noticia-prensa">
-              <img src="https://www.utn.ac.cr/sites/default/files/2024-08/Sala-prensa.png" alt="Sala de prensa" className="noticia-bg-image" />
-              <div className="noticia-overlay"><h3 className="noticia-card-title">Sala de prensa</h3></div>
+              <img
+                src="https://www.utn.ac.cr/sites/default/files/2024-08/Sala-prensa.png"
+                alt="Sala de prensa"
+                className="noticia-bg-image"
+              />
+              <div className="noticia-overlay">
+                <h3 className="noticia-card-title">Sala de Prensa</h3>
+              </div>
             </div>
+
             <div className="noticia-card noticia-videos">
-              <img src="https://www.utn.ac.cr/sites/default/files/2024-08/Videos-UTN.png" alt="Videos de la UTN" className="noticia-bg-image" />
-              <div className="noticia-overlay"><h3 className="noticia-card-title">Videos de la UTN</h3></div>
+              <img
+                src="https://www.utn.ac.cr/sites/default/files/2024-08/Videos-UTN.png"
+                alt="Videos de la UTN"
+                className="noticia-bg-image"
+              />
+              <div className="noticia-overlay">
+                <h3 className="noticia-card-title">Videos UTN</h3>
+              </div>
             </div>
+
           </div>
         </div>
       </section>

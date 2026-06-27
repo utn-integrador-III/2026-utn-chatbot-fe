@@ -1,4 +1,4 @@
-/* Login Page Styles - UTN Theme Adaptado */
+/* Login Page Styles 
 .login-page {
   min-height: 100vh;
   display: flex;
@@ -43,7 +43,7 @@
   }
 }
 
-/* Error Message */
+
 .error-message {
   background: linear-gradient(135deg, #ff4757 0%, #ff3742 100%);
   color: white;
@@ -64,7 +64,7 @@
   75% { transform: translateX(5px); }
 }
 
-/* Form */
+
 .form-group {
   margin-bottom: 24px;
   text-align: left;
@@ -95,7 +95,7 @@
   box-shadow: 0 0 8px rgba(13, 110, 253, 0.3);
 }
 
-/* Password toggle button */
+
 .password-toggle {
   position: absolute;
   right: 14px;
@@ -114,12 +114,12 @@
   color: #002c6e;
 }
 
-/* Wrapper for password input + toggle */
+
 .form-group div {
   position: relative;
 }
 
-/* Submit Button */
+
 .login-button {
   width: 100%;
   padding: 16px;
@@ -155,7 +155,7 @@
   background: #6c757d;
 }
 
-/* Loading Spinner */
+
 .loading-spinner {
   width: 18px;
   height: 18px;
@@ -171,7 +171,7 @@
   }
 }
 
-/* Register Link */
+
 .register-link {
   margin-top: 24px;
   font-size: 14px;
@@ -191,7 +191,7 @@
   text-decoration: underline;
 }
 
-/* Disabled input styling */
+
 .loading {
   pointer-events: none;
 }
@@ -200,7 +200,7 @@
   background: #f8f9fa;
 }
 
-/* Responsive */
+
 @media (max-width: 480px) {
   .login-container {
     padding: 32px 24px;
@@ -236,4 +236,4 @@
   color: #002c6e;
   background: rgba(13, 110, 253, 0.1);
 }
-
+*/
