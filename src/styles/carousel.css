@@ -7,7 +7,6 @@ hr {
   padding: 4px;
 }
 
-
 .custom-caption {
   left: 0;
   right: 0;
@@ -20,8 +19,8 @@ hr {
     to top,
     rgba(13, 44, 103, 0.85) 0%,
     rgba(13, 44, 103, 0.55) 35%,
-    rgba(13, 44, 103, 0.15) 65%,
-    rgba(13, 44, 103, 0) 100%
+    rgba(101, 106, 114, 0.15) 65%,
+    rgba(102, 106, 113, 0) 100%
   );
   padding: 28px 8% 28px 3%;
   border-radius: 0;
