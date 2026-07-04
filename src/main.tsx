@@ -12,7 +12,6 @@ import './styles/index.css';
 // Componentes / Páginas
 import App from './App';
 import Campus from './pages/campus';
-import UploadArchive from './pages/upload-archive';
 import Admision from './pages/admision';
 import AvatarLogin from './pages/avatar';
 import Acercade from './pages/acercade';
@@ -25,11 +24,7 @@ import Internacional from './pages/internacional';
 import Funcionarios from './pages/funcionarios';
 import Tramites from './pages/tramites';
 import UtnTransparente from './pages/utn-transparente';
-import Login from './pages/login';
-import Register from './pages/registrar';
 
-// Layouts
-import AuthLayout from './layouts/authLayout';
 import MainLayout from './layouts/mainLayout';
 
 const root = ReactDOM.createRoot(
@@ -39,17 +34,10 @@ const root = ReactDOM.createRoot(
 root.render(
   <BrowserRouter>
     <Routes>
-      {/* Rutas sin navbar, chat ni footer */}
-      <Route element={<AuthLayout />}>
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/upload-archive" element={<UploadArchive />} />
-      </Route>
 
       {/* Rutas con navbar, chat y footer */}
       <Route element={<MainLayout />}>
         <Route path="/" element={<App />} />
-        <Route path="/uploadArchive" element={<UploadArchive />} />
         <Route path="/campus" element={<Campus />} />
         <Route path="/admision" element={<Admision />} />
         <Route path="/avatar" element={<AvatarLogin />} />
