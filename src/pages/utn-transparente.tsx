@@ -10,7 +10,7 @@ const UtnTransparente: React.FC = () => {
         {/* Transparency Section */}
         <div className="transparency-section">
           <div className="transparency-header">
-            <h2>TRANSPARENT UTN</h2>
+            <h2>UTN TRANSPARENT</h2>
           </div>
           
           <div className="transparency-content">
@@ -28,7 +28,7 @@ const UtnTransparente: React.FC = () => {
             
             <div className="transparency-images">
               <img src="https://www.utn.ac.cr/sites/default/files/images/I%CC%81ndice%20de%20transparencia.png" alt="Índice de transparencia" className="transparency-img" />
-              <img src="https://www.utn.ac.cr/sites/default/files/inline-images/INFOGRAFI%CC%81A%20Transparencia%202-AGOSTO%2724.png" alt="Infografía Transparencia" className="transparency-img" />
+               <img src="public/images/utntransparent.jpg" alt="ChatBot" />
             </div>
           </div>
         </div>
