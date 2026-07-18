@@ -29,25 +29,25 @@ const CalendarsSection: React.FC = () => {
           <ul className="calendars-list">
             <li className="calendar-item">
               <button
-                onClick={() => handleCalendarClick('Calendario Institucional 2025', 'https://www.utn.ac.cr/sites/default/files/page/field_archivos_adjuntos_todo_tipo/Calendario%20Institucional%202025_Modificado%20Acuerdo%20CU%2015-15-2025.pdf')}
+                onClick={() => handleCalendarClick('Calendario Institucional 2026', 'https://www.utn.ac.cr/sites/default/files/page/field_archivos_adjuntos_todo_tipo/Calendario%20Institucional%202026%20V.3_Modificado%20Acuerdo%20CU%2021-14-2026.pdf')}
                 className="calendar-link"
               >
-                • Calendario Institucional 2025
+                • Calendario Institucional 2026
               </button>
             </li>
             
             <li className="calendar-item">
               <button
-                onClick={() => handleCalendarClick('Calendario Institucional 2025 Por Procesos', 'https://www.utn.ac.cr/sites/default/files/page/field_archivos_adjuntos_todo_tipo/Calendario%20Institucional%202025%20Por%20Procesos%20%282%29_0.pdf')}
+                onClick={() => handleCalendarClick('Calendario Institucional 2026 Por Procesos', 'https://www.utn.ac.cr/sites/default/files/page/field_archivos_adjuntos_todo_tipo/Calendario%20Institucional%202026%20Por%20Procesos%20V.3.pdf')}
                 className="calendar-link"
               >
-                • Calendario Institucional 2025 Por Procesos
+                • Calendario Institucional 2026 Por Procesos
               </button>
             </li>
 
             <li className="calendar-item spaced">
               <button
-                onClick={() => handleCalendarClick('Calendario de Extensión y Acción Social', 'https://www.utn.ac.cr/sites/default/files/page/field_archivos_adjuntos_todo_tipo/Calendario%20Institucional%202025%20EAS.pdf')}
+                onClick={() => handleCalendarClick('Calendario de Extensión y Acción Social', 'https://www.utn.ac.cr/sites/default/files/page/field_archivos_adjuntos_todo_tipo/Calendario%20Institucional%202026%20Extension.pdf')}
                 className="calendar-link"
               >
                 • Calendario de Extensión y Acción Social

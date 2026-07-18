@@ -176,7 +176,7 @@ html, body {
   position: relative;
 }
 
-/* Marca de agua de fondo con imagen 
+/* Marca de agua de fondo con imagen */
 .chat-body::before {
   content: '';
   position: absolute;
@@ -185,7 +185,7 @@ html, body {
   transform: translateX(-50%);
   width: 210px;
   height: 210px;
-  background-image: url("/frontend/chatbot-ui/public/images/chat-bot.png");
+  background-image: url("/images/chat-bot.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -194,7 +194,7 @@ html, body {
   pointer-events: none;
   user-select: none;
   filter: grayscale(30%) contrast(0.8);
-}*/
+}
 
 /* Opción alternativa: Marca de agua con texto E imagen 
 .chat-body::after {

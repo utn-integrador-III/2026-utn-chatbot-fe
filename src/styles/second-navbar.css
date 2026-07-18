@@ -1,22 +1,73 @@
-/* Hace que el navbar quede sobre las imágenes del carrusel */
 .second-navbar {
   top: 0;
   width: 100%;
-  background: #eeeded;
+  background: #0d2c67; 
   z-index: 10;
   padding: 1rem 2rem;
   border-radius: 0;
   margin-bottom: 0;
   position: sticky;
+  transition: background-color 0.3s ease;
 }
 
 .second-navbar.scroll {
-  background-color: white; /* Color blanco cuando se hace scroll */
-  color: black; /* Color de texto oscuro cuando está en blanco */
+  background-color: #eeeded;
 }
 
 .second-navbar .nav-link {
-  color: black !important;
+  color: #ffffff !important;
   font-weight: 500;
+  font-size: 15px;
   margin-right: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.second-navbar .nav-link:hover {
+  color: #dddddd !important;
+}
+
+.second-navbar.scroll .nav-link {
+  color: #000000 !important;
+}
+
+.second-navbar.scroll .nav-link:hover {
+  color: #333333 !important;
+}
+
+.second-navbar .dropdown-toggle::after {
+  border-top-color: #ff9400;
+}
+
+.second-navbar .navbar-brand {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100px; 
+  min-height: 1px;
+}
+
+.second-navbar .navbar-brand img {
+  display: block;
+  width: 100px; 
+  height: auto;
+  max-width: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.second-navbar .dropdown-menu {
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.second-navbar .dropdown-item {
+  color: #0d2c67;
+}
+
+.second-navbar .dropdown-item:hover {
+  background-color: #f0f4fa;
+  color: #0d2c67;
 }

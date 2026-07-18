@@ -1,4 +1,4 @@
-import { useState } from 'react';
+/*import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../styles/login.css';
 
@@ -127,7 +127,7 @@ function Login() {
             </div>
           </div>
 
-          {/* Botón de login sin <Link> */}
+          
           <button type="submit" className="login-button" disabled={loading}>
             {loading ? (
               <>
@@ -164,4 +164,4 @@ function Login() {
     </div>
   );
 }
-export default Login;
+export default Login; */
