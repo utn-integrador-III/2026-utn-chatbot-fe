@@ -97,7 +97,7 @@ body {
 }
 
 .procedures-header {
-  background-color: #a8c5e8;
+  background-color: rgb(15, 40, 103);
   padding: 15px 25px;
   margin-bottom: 0;
   border-radius: 0;
@@ -181,7 +181,7 @@ body {
 }
 
 .avatar-label {
-  background-color: #a8c5e8;
+  background-color: #063567;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px 20px;

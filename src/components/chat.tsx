@@ -69,13 +69,7 @@ function Chat() {
       {isOpen && (
         <div id="chat-window" className="chat-window">
           <div className="chat-header">
-            <p>🎓 Asistente Virtual UTN</p>
-            <button
-              className="options-btn"
-              onClick={() => window.open('/login', '_blank')}
-              title="Abrir sesión como administrador">
-              <i className="bi bi-person-circle"></i>
-            </button>
+            <p> Asistente Virtual UTN</p>
           </div>
 
           <div className="chat-body" id="chat-body">

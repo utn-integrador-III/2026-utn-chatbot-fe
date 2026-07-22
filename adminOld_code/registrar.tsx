@@ -1,4 +1,4 @@
-import { useState } from 'react';
+/*import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../styles/registrar.css';
 
@@ -136,4 +136,4 @@ function Register() {
     </div>
   );
 }
-export default Register;
+export default Register;*/
