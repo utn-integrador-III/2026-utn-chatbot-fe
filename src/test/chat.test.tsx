@@ -49,7 +49,7 @@ describe('Chat', () => {
   it('envía un mensaje al hacer clic en una sugerencia', async () => {
     (globalThis.fetch as ReturnType<typeof vi.fn>).mockResolvedValueOnce({
       ok: true,
-      json: async () => ({ message: { content: 'Aquí tienes info de becas' } }),
+      json: async () => ({ answer: 'Aquí tienes info de becas' }),
     });
 
     render(<Chat />);
@@ -66,7 +66,7 @@ describe('Chat', () => {
   it('envía un mensaje escrito y muestra la respuesta del bot', async () => {
     (globalThis.fetch as ReturnType<typeof vi.fn>).mockResolvedValueOnce({
       ok: true,
-      json: async () => ({ message: { content: 'Respuesta de prueba' } }),
+      json: async () => ({ answer: 'Respuesta de prueba' } ),
     });
 
     render(<Chat />);
@@ -84,7 +84,7 @@ describe('Chat', () => {
   it('envía un mensaje al presionar Enter', async () => {
     (globalThis.fetch as ReturnType<typeof vi.fn>).mockResolvedValueOnce({
       ok: true,
-      json: async () => ({ message: { content: 'Respuesta vía Enter' } }),
+      json: async () => ({ answer: 'Respuesta vía Enter' }),
     });
 
     render(<Chat />);
@@ -102,7 +102,7 @@ describe('Chat', () => {
   it('limpia el input después de enviar el mensaje', async () => {
     (globalThis.fetch as ReturnType<typeof vi.fn>).mockResolvedValueOnce({
       ok: true,
-      json: async () => ({ message: { content: 'ok' } }),
+      json: async () => ({ answer: 'ok' } ),
     });
 
     render(<Chat />);
