@@ -16,14 +16,14 @@ function Chat() {
 
   const getBotResponse = async (userMessage: string) => {
     try {
-      const response = await fetch("http://localhost:5005/savechat", {
+      const response = await fetch("http://192.168.100.29:5005/savechat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt: userMessage })
       });
       if (!response.ok) throw new Error("Error al conectar con la API");
       const data = await response.json();
-      const botText = data.message?.content || "Respuesta no válida.";
+      const botText = data.answer || "Respuesta no válida.";
       setMessages((prev) => [...prev, { role: 'bot', text: botText }]);
     } catch {
       setMessages((prev) => [...prev, { role: 'bot', text: "Hubo un error al obtener la respuesta." }]);
