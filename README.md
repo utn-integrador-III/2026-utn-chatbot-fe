@@ -12,6 +12,15 @@ El proyecto utiliza tecnologías como:
 - React Router
 ---
 
+# Imágenes del Proyecto
+Se presentan las siguientes imágenes para brindar una perspectiva clara del diseño y la interfaz del proyecto:
+## Navegación: Barra de navegación (Navbar) principal y secundaria.
+<img width="1600" height="800" alt="image" src="https://github.com/user-attachments/assets/5e373b14-8c6a-4d5c-b401-edec14e2f940" />
+## Pie de página y novedades: Footer y carrusel de noticias.
+<img width="1600" height="799" alt="image" src="https://github.com/user-attachments/assets/8ed80cea-bbd0-485a-8d13-c646c58e91be" />
+## Asistente virtual: Chatbot interactivo desplegado.
+<img width="1600" height="803" alt="image" src="https://github.com/user-attachments/assets/08b5820f-479a-4516-b977-2307045a2a53" />
+
 # Implementación de React
 
 ## Requisitos previos
